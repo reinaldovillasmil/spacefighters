@@ -14,6 +14,10 @@
 		4D77DE621C8D2D2600174248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D77DE611C8D2D2600174248 /* Images.xcassets */; };
 		4D77DE651C8D2D2600174248 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77DE631C8D2D2600174248 /* LaunchScreen.xib */; };
 		4D77DE711C8D2D2700174248 /* TestGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77DE701C8D2D2700174248 /* TestGameTests.swift */; };
+		D235C3AF1C8D3C0E002E87A3 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = D235C3AE1C8D3C0E002E87A3 /* Ship.swift */; };
+		D235C3B11C8D3F09002E87A3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D235C3B01C8D3F09002E87A3 /* GameScene.swift */; };
+		D235C3B71C8D4798002E87A3 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D235C3B61C8D4798002E87A3 /* sprites.atlas */; };
+		D235C3B91C8D4CB3002E87A3 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = D235C3B81C8D4CB3002E87A3 /* ship.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		4D77DE6A1C8D2D2700174248 /* TestGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D77DE6F1C8D2D2700174248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D77DE701C8D2D2700174248 /* TestGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGameTests.swift; sourceTree = "<group>"; };
+		D235C3AE1C8D3C0E002E87A3 /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		D235C3B01C8D3F09002E87A3 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D235C3B61C8D4798002E87A3 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		D235C3B81C8D4CB3002E87A3 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = sprites.atlas/ship.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 		4D77DE551C8D2D2600174248 /* TestGame */ = {
 			isa = PBXGroup;
 			children = (
+				D235C3B81C8D4CB3002E87A3 /* ship.png */,
+				D235C3B61C8D4798002E87A3 /* sprites.atlas */,
 				4D77DE581C8D2D2600174248 /* AppDelegate.swift */,
 				4D77DE5A1C8D2D2600174248 /* art.scnassets */,
 				4D77DE5C1C8D2D2600174248 /* GameViewController.swift */,
@@ -86,6 +96,8 @@
 				4D77DE611C8D2D2600174248 /* Images.xcassets */,
 				4D77DE631C8D2D2600174248 /* LaunchScreen.xib */,
 				4D77DE561C8D2D2600174248 /* Supporting Files */,
+				D235C3AE1C8D3C0E002E87A3 /* Ship.swift */,
+				D235C3B01C8D3F09002E87A3 /* GameScene.swift */,
 			);
 			path = TestGame;
 			sourceTree = "<group>";
@@ -159,6 +171,8 @@
 		4D77DE4B1C8D2D2600174248 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Ricardo Villasmil";
 				TargetAttributes = {
@@ -196,10 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D235C3B71C8D4798002E87A3 /* sprites.atlas in Resources */,
 				4D77DE651C8D2D2600174248 /* LaunchScreen.xib in Resources */,
 				4D77DE621C8D2D2600174248 /* Images.xcassets in Resources */,
 				4D77DE5B1C8D2D2600174248 /* art.scnassets in Resources */,
 				4D77DE601C8D2D2600174248 /* Main.storyboard in Resources */,
+				D235C3B91C8D4CB3002E87A3 /* ship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D77DE5D1C8D2D2600174248 /* GameViewController.swift in Sources */,
+				D235C3AF1C8D3C0E002E87A3 /* Ship.swift in Sources */,
+				D235C3B11C8D3F09002E87A3 /* GameScene.swift in Sources */,
 				4D77DE591C8D2D2600174248 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +438,7 @@
 				4D77DE761C8D2D2700174248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D77DE771C8D2D2700174248 /* Build configuration list for PBXNativeTarget "TestGameTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +447,7 @@
 				4D77DE791C8D2D2700174248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
