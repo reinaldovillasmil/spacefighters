@@ -69,7 +69,7 @@ class GameViewController: UIViewController {
             gestureRecognizers.extend(existingGestureRecognizers)
         }
         scnView.gestureRecognizers = gestureRecognizers
-    }
+    } 
     
     func handleTap(gestureRecognize: UIGestureRecognizer) {
         // retrieve the SCNView
